@@ -56,6 +56,10 @@ footer {
     gap: 20px;
 }
 
+.dropdown{
+    display: flex;
+    justify-content: center;
+    }
 
 @media (max-width: 576px){
     .layout{
@@ -64,6 +68,11 @@ footer {
         'menu'
         'main'
         'footer';}
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            }
 }
 
 @media (min-width: 577px) {
