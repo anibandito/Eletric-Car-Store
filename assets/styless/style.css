@@ -1,0 +1,88 @@
+body{
+    font-family: "Exo 2", sans-serif;
+}
+
+nav {
+    grid-area: menu;
+    padding: 5px;
+    background-color: rgb(203, 236, 188);
+    color: rgb(137, 223, 103); 
+    }
+
+main {
+    grid-area: main;
+    padding: 10px;
+    background-color: rgb(120, 201, 88);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgba(83, 99, 83, 0.79);
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+
+.layout{
+    display: grid;
+    border: 3px solid rgb(5, 78, 7);
+}
+
+
+.navbar-brand img{
+    width: 120px;
+}
+
+.gallery{
+    align-items: center;
+    gap: 20px;
+}
+
+.card gallery{
+    gap: 20px;
+    
+}
+
+
+@media (max-width: 576px){
+    .layout{
+        display: grid;
+        grid-template-areas:
+        'menu'
+        'main'
+        'footer';}
+}
+
+@media (min-width: 577px) {
+    .layout{
+        display: grid;
+        grid-template-columns: 150px 8fr;
+        grid-template-areas:
+        'menu main'
+        'menu main'
+        'footer main';} 
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.gallery {
+display: flex;
+flex-wrap: wrap;
+}
+
+.paginacion{
+    display: flex;
+    justify-content: center;
+}
+}
+
+
