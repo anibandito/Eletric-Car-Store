@@ -34,13 +34,26 @@ footer {
 }
 
 .gallery{
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.card gallery{
+.card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    
+    width: 250px;
+    height: 250px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 
